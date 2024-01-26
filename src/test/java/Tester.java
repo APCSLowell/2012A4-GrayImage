@@ -13,22 +13,36 @@ public class Tester {
 
    @Test
    public void partA () {
-      StepTracker tr = new StepTracker(10000);
-      assertEquals(0,tr.activeDays());
-      assertEquals(0,tr.averageSteps(),0.01);
-      tr.addDailySteps(9000);
-      tr.addDailySteps(5000);
-      assertEquals(0,tr.activeDays());
-      assertEquals(7000,tr.averageSteps(),0.01);
-      tr.addDailySteps(13000);
-      assertEquals(1,tr.activeDays());
-      assertEquals(9000,tr.averageSteps(),0.01);
-      tr.addDailySteps(23000);
-      tr.addDailySteps(1111);
-      assertEquals(2,tr.activeDays());
-      assertEquals(10222.2,tr.averageSteps(),0.01);
+      int [][] pixels1 = {{255,184,178,84,129},
+                    {84,255,255,130,84},
+                    {78, 255, 0,0, 78},
+                    {84,130,255,130,84}};
+      GrayImage image = new GrayImage(pixels1);
+      int result = image.countWhitePixels();
+      assertEquals("Test failed: Expected output 5 from countWhitePixels() but " + result + " was returned",5,image.countWhitePixels());
    }
 
+   @Test
+   public void partB(){
+      int[][] pixels2 = {
+      {221, 184, 178,  84, 135},
+      { 84, 255, 255, 130,  84},
+      { 78, 255,   0,   0,  78},
+      { 84, 130, 255, 130,  84}
+    };
+    
+    int[][] result = {
+      {221, 184, 100,  84, 135},
+      { 0, 125, 171, 130 ,  84},
+      { 78, 255,   0,   0,  78},
+      { 84, 130, 255, 130,  84}
+    };
+    
+    GrayImage image = new GrayImage(pixels2);
+    GrayImage afterImage = new GrayImage(result);
+    image.processImage();
+    assertEquals(afterImage.toString(),image.toString() );
+   }
 
 
 
