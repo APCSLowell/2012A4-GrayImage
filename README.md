@@ -1,19 +1,32 @@
-# 2019  AP Computer Science A FRQ #2 StepTracker
-Instructions:  [https://apstudents.collegeboard.org/ap/pdf/ap19-frq-computer-science-a.pdf](https://apstudents.collegeboard.org/ap/pdf/ap19-frq-computer-science-a.pdf)   
+# 2012  AP Computer Science A FRQ #4 GrayImage
 
-Quick Reference Guide:  https://apstudents.collegeboard.org/ap/pdf/ap-computer-science-a-java-quick-reference.pdf  
+Instructions: https://secure-media.collegeboard.org/apc/ap_frq_computerscience_12.pdf
 
-The correct answer outputs should be as follows.  
+Quick Reference Guide:  [https://apstudents.collegeboard.org/ap/pdf/ap-computer-science-a-java-quick-reference.pdf](https://apstudents.collegeboard.org/ap/pdf/ap-computer-science-a-java-quick-reference.pdf) 
+
+The correct answer outputs should be as follows.
+
+Part A
 
  
 
 ```
-0
-0.0
-0
-7000.0
-1
-9000.0
-2
-10222.2 
+5
+```
+
+Part B
+
+ 
+
+```
+ 221 184 178  84 135
+  84 255 255 130  84
+  78 255   0   0  78
+  84 130 255 130  84
+
+
+ 221 184 100  84 135
+   0 125 171 130  84
+  78 255   0   0  78
+  84 130 255 130  84
 ```
